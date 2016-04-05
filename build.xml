@@ -7,17 +7,8 @@
     </condition>
 
     <target name="make_archive">
-        <copy todir="build/clamshell/bin">
+        <copy todir="build/MistOS/bin">
             <fileset dir="bin" />
-        </copy>
-        <copy todir="build/clamshell/lib">
-            <fileset dir="lib" />
-        </copy>
-        <copy todir="build/clamshell/tools">
-            <fileset dir="tools" />
-        </copy>
-        <copy todir="build/clamshell/help">
-            <fileset dir="help" />
         </copy>
         <zip zip64Mode="never" destfile="build/MistOS.zip" basedir="build/MistOS" />
     </target>
